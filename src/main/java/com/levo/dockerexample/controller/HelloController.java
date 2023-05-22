@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("docker-java-app")
 public class HelloController {
-	
+	System.out.println("Hi Satish this is from sprint boot java app");
 	@RequestMapping(value = "/test", method = RequestMethod.GET)
 	public String test() {
 		return "docker-java-app is up and running: " + new Date();
